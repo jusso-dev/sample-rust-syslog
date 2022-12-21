@@ -21,7 +21,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         let message = parse_syslog_message::SyslogMessage::from_str(&input).unwrap();
         println!("Received syslog message: {:?}", &message);
 
-        // Create an asynchronous runtime
+        //Create an asynchronous runtime
         let rt = tokio::runtime::Runtime::new().unwrap();
 
         // Run the asynchronous function within the runtime

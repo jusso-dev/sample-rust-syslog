@@ -8,5 +8,7 @@ edition = "2021"
 [dependencies]
 dotenv = "0.15.0"
 reqwest = {version = "0.11.13", default-features = false, features = ["rustls-tls", "json"] }
+rsyslog = "0.1.4"
 serde = { version = "1.0.151", features = ["derive"] }
+syslog = "6.0.1"
 tokio = { version = "1.23.0", features = ["full"] }
